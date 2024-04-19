@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* --- Body --- */
+
+body {
+    background-image: linear-gradient(to bottom, #2211E7, #383837);
+    background-attachment: fixed;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* --- Header --- */
+
+header.sticky {
+    background:  #3d2fd6;
+    padding: 25px 100px;
+    box-shadow: 0 35px 25px rgba(0, 0, 0, 0.081);
+}
+
+/* --- Seção 1 - Página Contact us --- */
+
+#sec-1-contact {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 160px 150px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.caminho-sec-1-contact {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.caminho-sec-1-contact a {
+    margin-right: 8px;
+}
+
+.textp-sec1-contact {
+    color: #E47500;
+}
+
+.text-sec-1-contact {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 63px;
+}
+
+.ellipse-sec-1-contact {
+    width: 9px;
+    height: 9px;
+    margin-left: 98%;
+    /* position: relative;
+    left: 990px; */
+}
+    
+.text1-sec-1-contact {
+    font-weight: 600;
+    font-size: 33px;
+}
+
+.text2-sec-1-contact {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 93px;
+}
+
+.container-follow-sec-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.follow-sec-1 {
+    text-align: start;
+    font-size: 16px;
+}
+
+.phone-sec-1 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.location-sec-1 {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 19px;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sec-2-contact {
+    background-color: #1C140F;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 54px 150px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-sec-2 {
+    font-size: 30px;
+    line-height: 70px;
+    /* position: relative;
+    bottom: 340px; */
+}
+
+.text-sec-2 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 79px;
+    /* position: relative;
+    bottom: 340px; */
+}
+
+.line1-sec-2 {
+    position: absolute;
+    bottom: 547px;
+    left: 487px;
+}
+
+.line2-sec-2 {
+    position: absolute;
+    top: 557px;
+    right: 969px;
+}
+/* 
+.line1-sec-2 {
+    position: relative;
+    bottom: 121px;
+    left: 243px;
+    border: 2px solid yellow; 
+}
+
+
+.line2-sec-2 {
+    position: relative;
+    top: 121px;
+    right: 485px;
+    border: 2px solid yellow; 
+} */
+
+fieldset {
+    border: none;
+}
+
+.campos {
+    margin-bottom: 20px;
+}
+
+.campos label {
+    margin-bottom: 10px;
+    color: #4F4F4F;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.line1 {
+    float: left;
+}
+
+.line1 .campo_nome {
+    margin-right: 10px;
+}
+
+.campos input[type="email"] {
+    width: 100%;
+}
+
+.campos textarea {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.campos input[type="text"], .campos input[type="email"], .campos textarea {
+    padding: 20px 160px 20px 10px ;
+    border: 1px solid #CECECE;
+    background-color: #ffffff10;
+    outline: none;
+    display: block;
+    border-radius: 9px;
+}
+
+.btn_submit {
+    border: none;
+    background-color: #DC7000;
+    color: #FFFFFF;
+    padding: 20px 48px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 40px;
+    float: right;
+}
