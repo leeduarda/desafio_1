@@ -9,12 +9,12 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="/index.html">Logo</a>
+        <a class="logo" href="./index.html">Logo</a>
         <ul class="nav-list">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./error.html">About us</a></li>
+            <li><a href="./error.html">Portfolio</a></li>
+            <li><a href="./error.html">News</a></li>
             <li><a class="btn-contact" href="#">Contact us</a></li>
         </ul>
     </header>
@@ -22,7 +22,7 @@
     <main>
         <section id="sec-1-contact">
             <div class="caminho-sec-1-contact">
-                <a href="/index.html">Home</a>
+                <a href="./index.html">Home</a>
                 <p> > </p>
                 <p class="textp-sec1-contact">Contact us</p>
             </div>
@@ -65,7 +65,8 @@
             <img class="line1-sec-2" src="./imgs/pg contact/line1.svg" alt="">
             <p class="title-sec-2">Say hello</p>
             <p class="text-sec-2">Lorem Ipsum is simply dummy text of the printing.</p>
-            <form action="">
+            
+            <form action="" id="formulario" method="POST" name="formulario">
                 <fieldset class="group">
                     <div class="line1 campos">
                         <label for="nome">First Name</label>
@@ -87,7 +88,7 @@
                         <textarea class="msg" cols="35" rows="8"></textarea>
                     </div>
 
-                    <input class="btn_submit" type="submit" value="Get in touch">
+                    <input class="btn_submit" type="submit" onclick="validar()" value="Get in touch">
                 </fieldset>
             </form>
 

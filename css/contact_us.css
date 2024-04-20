@@ -200,6 +200,7 @@ fieldset {
     outline: none;
     display: block;
     border-radius: 9px;
+    color: #959595;
 }
 
 .btn_submit {
