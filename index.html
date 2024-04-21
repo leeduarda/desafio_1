@@ -177,9 +177,10 @@
                     </p>
                 </div>
 
-                <form class="input-subscrite-sec-6">
-                    <input type="email" placeholder="Enter email address">
-                    <button type="submit">Continue</button>
+                <form  action="" id="formularioEmailHome" method="POST" name="formularioEmailHome" class="input-subscrite-sec-6">
+                    <input class="requiredHome" type="email" id="email" placeholder="Enter email address" oninput="validarEmailHome()">
+                    <button class="reset" type="submit" onclick="continuar()">Continue</button>
+                    <span class="span-required">Digite um email válido. Ex: teste@gmail.com.br</span>
                 </form>
             </div>
         </section>
@@ -225,6 +226,7 @@
 
     </footer>
 
+    <script src="./js/home.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

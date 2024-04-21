@@ -17,16 +17,23 @@ header.sticky {
     box-shadow: 0 35px 25px rgba(0, 0, 0, 0.081);
 }
 
+header.sticky .barra {
+    position: absolute;
+    top: 45px;
+    right: 43%;
+    transition: 0.5s;
+}
+
 .barra {
-    position: relative;
-    top: 15px;
-    right: 91%;
+    position: absolute;
+    top: 60px;
+    right: 43%;
+    transition: 0.5s;
 }
 
 /* --- Seção 1 --- */
 
 #sec-1 {
-    /* position: relative; */
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -91,7 +98,6 @@ header.sticky {
 /* --- Seção 2 --- */
 
 #sec-2 {
-    /* position: relative; */
     width: 100%;
     min-height: 100vh;
     padding: 132px 150px 67px;
@@ -162,7 +168,6 @@ header.sticky {
 /* --- Seção 3 --- */
 
 #sec-3 {
-    /* position: relative; */
     width: 100%;
     min-height: 100vh;
     padding: 0 150px 67px;
@@ -207,7 +212,6 @@ header.sticky {
 /* --- Seção 4 --- */
 
 #sec-4 {
-    /* position: relative; */
     width: 100%;
     min-height: 100vh;
     background-size: cover;
@@ -220,6 +224,7 @@ header.sticky {
     justify-content: center;
     align-items: center;
 }
+
 
 .title-sec-4 {
     text-align: center;
@@ -259,7 +264,6 @@ header.sticky {
 /* --- Seção --- */
 
 #sec-5 {
-    /* position: relative; */
     width: 100%;
     min-height: 100vh;
     padding: 140px 150px 0 150px;

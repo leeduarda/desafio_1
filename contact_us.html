@@ -67,29 +67,37 @@
             <p class="text-sec-2">Lorem Ipsum is simply dummy text of the printing.</p>
             
             <form action="" id="formulario" method="POST" name="formulario">
+
                 <fieldset class="group">
+
                     <div class="line1 campos">
                         <label for="nome">First Name</label>
-                        <input class="campo_nome" name="nome" id="nome" type="text">
+                        <input class="campo_nome required" name="nome" id="nome" type="text" oninput="validarNome()">
+                        <span class="span-required">Nome deve ter no mínimo 3 caracteres.</span>
                     </div>
 
                     <div class="line1 campos">
-                        <label for="lastName">Last Name</label>
-                        <input class="campo_lastName" name="lastName" id="lastName" type="text">
+                        <label for="sobrenome">Last Name</label>
+                        <input class="campo_sobrenome required" name="sobrenome" id="sobrenome" type="text" oninput="validarSobrenome()">
+                        <span class="span-required">Sobrenome deve ter no mínimo 3 caracteres.</span>
                     </div>
 
                     <div class="campos">
-                        <label for="email">Email Address</label>
-                        <input class="campo_email" name="email" id="email" type="email">
+                        <label class="emaill" for="email">Email Address</label>
+                        <input class="campo_email required" name="email"  type="email" oninput="validarEmailForm()">
+                        <span class="span-required">Digite um email válido. Ex: teste@gmail.com.br</span>
                     </div>
 
                     <div class="campos">
-                        <label>Message</label>
-                        <textarea class="msg" cols="35" rows="8"></textarea>
+                        <label class="msg">Message</label>
+                        <textarea id="msg" class="required" cols="35" rows="8"></textarea>
+                        <span class="span-required">Digite uma mensagem.</span>
                     </div>
 
-                    <input class="btn_submit" type="submit" onclick="validar()" value="Get in touch">
+                    <input onclick="enviar()" class="btn_submit" type="submit" value="Get in touch">
+
                 </fieldset>
+
             </form>
 
             <img class="line2-sec-2" src="./imgs/pg contact/line2.svg" alt="">
@@ -111,9 +119,10 @@
                     </p>
                 </div>
 
-                <form class="input-subscrite-sec-6">
-                    <input type="email" placeholder="Enter email address">
-                    <button type="submit">Continue</button>
+                <form  action="" id="formularioEmail" method="POST" name="formularioEmail" class="input-subscrite-sec-6">
+                    <input class="required" type="email" id="email" placeholder="Enter email address" oninput="validarEmail()">
+                    <button  type="submit" onclick="continuar2()">Continue</button>
+                    <span class="span-required">Digite um email válido. Ex: teste@gmail.com.br</span>
                 </form>
             </div>
         </section>
@@ -159,6 +168,7 @@
 
     </footer>
 
+    <script src="./js/contact.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
