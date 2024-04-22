@@ -10,7 +10,7 @@ Permite o envio de endereço de email para o usuário receber as atualizações 
 
 ## Estrutura do Projeto
 
-- `inde.html`: Arquivo principal do projeto.
+- `index.html`: Arquivo principal do projeto.
 - `css/`: Pasta contendo os arquivos CSS.
 - `js/`: Pasta contendo os arquivos JavaScript.
 - `imgs/`: Pasta contendo as imagens e icones.
