@@ -81,6 +81,11 @@ header.sticky .barra {
     border: none;
     text-align: center;
     color: #FFFFFF;
+    box-shadow: 0 3px 4px rgba(28, 20, 103, 0.686);
+}
+
+.button-sec-1:hover {
+    background-color: #fa9121da;
 }
 
 .img-control {
@@ -120,6 +125,10 @@ header.sticky .barra {
     margin-bottom: 58px;
     font-family: 'Rubik', sans-serif;
     color: #FFFFFF;
+}
+
+.button-sec-2:hover {
+    background-color: #ffffff2d;
 }
 
 .title-sec-2 h3 {
@@ -215,7 +224,7 @@ header.sticky .barra {
     width: 100%;
     min-height: 100vh;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.832), rgba(0, 0, 0, 0.832)), url(../imgs/sec-4/fundo.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.832), rgba(0, 0, 0, 0.488)), url(../imgs/sec-4/fundo.png);
     background-position: center;
     padding: 132px 150px 67px;
     color: #FFFFFF;
@@ -317,3 +326,6 @@ header.sticky .barra {
     color: #FFFFFF;
 }
 
+.button-sec-5:hover {
+    background-color: #ffffff2d;
+}

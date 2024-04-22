@@ -38,10 +38,10 @@
             <div class="container-follow-sec-1">
                 <div class="follow-sec-1">
                     <p>Follow us</p>
-                    <a href="https://www.facebook.com/"><img src="./imgs/pg contact/facebook.svg" alt=""></a>
-                    <a href="https://www.instagram.com/"><img src="./imgs/pg contact/instagram.svg" alt=""></a>
-                    <a href="https://twitter.com/"><img src="./imgs/pg contact/twiter.svg" alt=""></a>
-                    <a href="https://br.linkedin.com/"><img src="./imgs/pg contact/linkedIn.svg" alt=""></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./imgs/pg contact/facebook.svg" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./imgs/pg contact/instagram.svg" alt=""></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="./imgs/pg contact/twiter.svg" alt=""></a>
+                    <a href="https://br.linkedin.com/" target="_blank"><img src="./imgs/pg contact/linkedIn.svg" alt=""></a>
                 </div>
 
                 <img src="./imgs/pg contact/line.svg" alt="">
@@ -73,13 +73,13 @@
                     <div class="line1 campos">
                         <label for="nome">First Name</label>
                         <input class="campo_nome required" name="nome" id="nome" type="text" oninput="validarNome()">
-                        <span class="span-required">Nome deve ter no mínimo 3 caracteres.</span>
+                        <span class="span-required">Nome deve ter no mínimo 3 caracteres, sem números.</span>
                     </div>
 
                     <div class="line1 campos">
                         <label for="sobrenome">Last Name</label>
                         <input class="campo_sobrenome required" name="sobrenome" id="sobrenome" type="text" oninput="validarSobrenome()">
-                        <span class="span-required">Sobrenome deve ter no mínimo 3 caracteres.</span>
+                        <span class="span-required">Sobrenome deve ter no mínimo 3 caracteres, sem números.</span>
                     </div>
 
                     <div class="campos">
@@ -90,8 +90,8 @@
 
                     <div class="campos">
                         <label class="msg">Message</label>
-                        <textarea id="msg" class="required" cols="35" rows="8"></textarea>
-                        <span class="span-required">Digite uma mensagem.</span>
+                        <textarea oninput="validarMsg()" id="msg" class="required" cols="35" rows="8"></textarea>
+                        <span class="span-required">Mensagem deve ter no mínimo 10 caracteres.</span>
                     </div>
 
                     <input onclick="enviar()" class="btn_submit" type="submit" value="Get in touch">
@@ -153,10 +153,10 @@
             </div>
     
             <div class="collumn4-icons-footer">
-                <a href="https://www.facebook.com/"><img src="./imgs/footer/facebook.svg" alt=""></a>
-                <a href="https://www.instagram.com/"><img src="./imgs/footer/instagram.svg" alt=""></a>
-                <a href="https://twitter.com/"><img src="./imgs/footer/twitter.svg" alt=""></a>
-                <a href="https://br.linkedin.com/"><img src="./imgs/footer/linkedIn.svg" alt=""></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./imgs/footer/facebook.svg" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./imgs/footer/instagram.svg" alt=""></a>
+                <a href="https://twitter.com/" target="_blank"><img src="./imgs/footer/twitter.svg" alt=""></a>
+                <a href="https://br.linkedin.com/" target="_blank"><img src="./imgs/footer/linkedIn.svg" alt=""></a>
             </div>
         </div>
 

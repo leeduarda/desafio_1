@@ -3,18 +3,18 @@ const campo = document.querySelectorAll('.requiredHome');
 const span = document.querySelectorAll('.span-required');
 const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
 
-let emailValor = document.getElementById('email').value;
-
 let emailValido = false;
 const email = document.getElementById('email');
-
 
 
 /* --- Adicionando o evento --- */
 
 formEmailHome.addEventListener('submit', (event) => {
     event.preventDefault();
-    validarEmailHome();
+    
+    if(campo[0].value != '') {
+        validarEmailHome();
+    }
 })
 
 /* --- Função de mostrar erro Home --- */
@@ -32,7 +32,7 @@ function removeErro(index) {
 }
 
 
-/* --- Condições das validações --- */
+/* --- Condição da validação --- */
 
 function validarEmailHome() {
 
@@ -44,30 +44,18 @@ function validarEmailHome() {
     }
 }
 
+/* --- Função do onclick --- */
 
 function continuar() {
 
     if(emailValido == true) {
-        localStorage.setItem("textoEmail", email.value);
-        alert("Email enviado!");
-        formEmailHome.reset();
+        localStorage.setItem("enderecoEmail", email.value);
+        alert("Email enviado :)");
+        
+        emailValido = false;
+        removeErro(0);
+        campo[0].value = '';
     } else {
-        alert("Email invalido!");
+        alert("Email invalido.");
     } 
 }
-
-
-// function continuar() {
-//     if(validarEmailHome == "") {
-//         let textoEmail = JSON.parse(localStorage.getItem('textoEmail') || '[]')
-
-//     textoEmail.push(
-//         {
-//             email: email.value,
-//         }
-//     )
-
-//     localStorage.setItem('textoEmail', JSON.stringify(textoEmail))
-//     }
-    
-// }
