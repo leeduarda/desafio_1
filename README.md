@@ -44,3 +44,7 @@ Notas:
 ## Autor
 
 - [@leeduarda](https://github.com/leeduarda)
+
+## Status
+
+Projeto concluído.
